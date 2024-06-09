@@ -201,7 +201,8 @@
 
 .container {
     display: flex;
-    align-items: flex-start;
+    flex-wrap: wrap; /* Permitir que os elementos envolvam quando necessário */
+    justify-content: space-between; /* Alinhar os elementos à esquerda e à direita */
     width: 80%;
     max-width: 800px;
     padding: 20px;
@@ -213,7 +214,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 20px;
+    margin-bottom: 20px; /* Adicionar um espaço entre os elementos */
 }
 
 .poster img {
@@ -223,14 +224,12 @@
 }
 
 .main__btn {
-    align-self: center;
     font-size: 1rem;
     background-color: #FFDD00;
     border: none;
     border-radius: 25px;
     color: #000000;
-    margin-top: 1rem;
-    position: relative;
+    margin-bottom: 20px; /* Adicionar um espaço entre os elementos */
     transition: all 0.35s;
     padding: 10px;
     cursor: pointer;
@@ -238,10 +237,8 @@
 }
 
 .main__btn a {
-    position: relative;
-    z-index: 2;
     color: #000000;
-    font-family: "Raleway", sans-serif;  
+    font-family: "Raleway", sans-serif;
     text-decoration: none;
     font-weight: bold;
 }
@@ -255,36 +252,40 @@
     flex: 1;
     text-align: right;
     padding-left: 15px;
+    margin-bottom: 20px; /* Adicionar um espaço entre os elementos */
 }
 
 .right-section-texto h1 {
     text-align: left;
 }
 
-#p1{
+#p1, #p2, #p3 {
     font-size: 15px;
-    text-align: left;  
-} 
-
-#p2 {
-    font-size: 15px;
-    text-align: justify;
-}
-
-#p3 {
-    font-size: 15px;
-    text-align: right;
+    text-align: left;
+    margin-bottom: 20px; /* Adicionar um espaço entre os elementos */
 }
 
 .video {
     margin-top: 40px;
     text-align: center;
+    width: 100%; /* Garantir que a largura da vídeo seja 100% */
 }
 
 .video iframe {
     max-width: 100%;
 }
 
+@media screen and (max-width: 480px) {
+    .container {
+        flex-direction: column; /* Mudar para uma disposição vertical */
+        align-items: center; /* Alinhar todos os elementos ao centro */
+    }
+
+    .left-section, .main__btn, .right-section-texto, #p1, #p2, #p3, .video {
+        width: 100%; /* Definir a largura de todos os elementos para 100% */
+        margin: 0; /* Remover margens definidas anteriormente */
+    }
+}
 
 /* footer */
 
