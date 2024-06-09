@@ -191,140 +191,200 @@
     }
 }
 
-.container {
+.services {
     display: flex;
     flex-direction: column;
-    position: relative;
     align-items: center;
-    width: 90%;    
-    margin-left: 5%;
-}
-
-.posts {
-    height: 760px;
-    position: relative;
-    text-align: center;
-    margin-bottom: 300px;
-}
-
-#titulo1 {
-    display: inline-block;
+    height: 185vh;
+  }
+    
+  .services h1 {
+    margin-top: 2rem;
     font-family: "Raleway", sans-serif;
-    color: #000000;
-    text-align: left;
-    margin-top: 2%;
-    margin-bottom: 2%;
-}
-
-.thumbnail {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-row-gap: 20px;
-    grid-column-gap: 10px;
-    filter: contrast(80%);
-}
-
-.imagens {
+    background-color: #000000;
+    background-image: linear-gradient(
+      to right, 
+      #fffceb 0%
+      #fff7c5 0%
+      #fff08f 21%
+      #ffea60 52%
+      #FFDD00 78%
+      #ffdd00 100%  
+    );
+    background-size: 100%;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+  }
+  
+  .services__container {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    transition: filter 0.5s ease;
-    position: relative;
-    padding-inline: 45px;
-}
+    flex-wrap: wrap;
+    margin-bottom: -15px;
+  }
+  
+  .services__card {
+    margin: 1rem;
+    height: 525px;
+    width: 400px;
+    border-radius: 4px;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0,0) 0%,
+      rgba(17, 17, 17, 0.6) 100%
+      ), 
+      url(/images/THUMB1.webp);
+      background-size: cover;
+      background-position: 50%;
+      position: relative;
+      color: #fff;
+  }
+  
+  .services__card:nth-child(2) {
+    margin: 1rem;
+    height: 525px;
+    width: 400px;
+    border-radius: 4px;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0,0) 0%,
+      rgba(17, 17, 17, 0.6) 100%
+      ), 
+      url(/images/THUMB2.webp);
+      background-size: cover;
+      background-position: 50%;
+      position: relative;
+      color: #fff;
+  }
+  
+  .services__card:nth-child(3) {
+    margin: 1rem;
+    height: 525px;
+    width: 400px;
+    border-radius: 4px;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0,0) 0%,
+      rgba(17, 17, 17, 0.6) 100%
+      ), 
+      url(/images/THUMB3.webp);
+      background-size: cover;
+      background-position: 50%;
+      position: relative;
+      color: #fff;
+  }
+  
+  .services__card:nth-child(4) {
+    margin: 1rem;
+    height: auto;
+    width: 400px;
+    border-radius: 4px;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0,0) 0%,
+      rgba(17, 17, 17, 0.6) 100%
+      ), 
+      url(/images/THUMB4.webp);
+      background-size: cover;
+      background-position: 50%;
+      position: relative;
+      color: #fff;
+  }
 
-.imagens:hover {
-    filter: brightness(125%);
-}
+  .services__card:nth-child(5) {
+    margin: 1rem;
+    height: 525px;
+    width: 400px;
+    border-radius: 4px;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0,0) 0%,
+      rgba(17, 17, 17, 0.6) 100%
+      ), 
+      url(/images/THUMB5.jpg);
+      background-size: cover;
+      background-position: 50%;
+      position: relative;
+      color: #fff;
+  }
 
-.imagens img {
-    object-fit: cover;
-}
+  .services__card:nth-child(6) {
+    margin: 1rem;
+    height: 525px;
+    width: 400px;
+    border-radius: 4px;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0,0) 0%,
+      rgba(17, 17, 17, 0.6) 100%
+      ), 
+      url(/images/THUMB6.jpg);
+      background-size: cover;
+      background-position: 50%;
+      position: relative;
+      color: #fff;
+  }
 
-.imagens p {
-    margin-top: 5px;
-    padding-bottom: 5px;
+  .services h2{    
     font-family: "Raleway", sans-serif;
-    font-size: 20px;
-    text-align: justify;
-    z-index: 1;
-    border-bottom: 2px solid black;
+    position:absolute;
+    text-align: left;
+    font-size: 18px;
+    top: 455px;
+    left: 10px;
+    color: #FFDD00;
     cursor: pointer;
-}
+  }
 
-#next {
-    background-color: #FFDD00;
-    color: black;
-    border: 0;
-    border-radius: 25px;
-    padding: 10px;
-    font-family: "Raleway", sans-serif;
-    font-size: 20px;
-    cursor: pointer;
-    margin-top: 55px;
-    margin-bottom: 20px;
-    position: relative;
-    right: -700px;
-}
-
-
-
-@media (max-width: 1450px) {
-    .posts {
-        height: auto;
-        margin-bottom: 20px;
+  @media screen and (max-width: 960px) {
+    .services{
+      height: 1900px;
+    }
+  
+    .services h1{
+      font-size: 2rem;
+      margin-top: 2rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px){
+    .services{
+      height: 1900px;
+    }
+  
+    .services h1{
+      font-size: 1.2rem;
+    }
+  
+    .services__card{
+      width:300px;
+    }
+  
+    .services__card:nth-child(2){
+      width:300px;
+    }
+  
+    .services__card:nth-child(3){
+      width:300px;
     }
 
-    .thumbnail {
-        grid-template-columns: repeat(2, 1fr);
-    }
+    .services__card:nth-child(4){
+        width:300px;
+      }
 
-    .imagens {
-        padding-inline: 20px;
-    }
+    .services__card:nth-child(5){
+        width:300px;
+      }
+      
+    .services__card:nth-child(6){
+        width:300px;
+      }  
+  }
 
-    #next {
-        right: -500px;
-    }
-}
-
-@media (max-width: 900px) {
-    .posts {
-        height: auto;
-        margin-bottom: 20px;
-    }
-
-    .thumbnail {
-        grid-template-columns: 1fr;
-    }
-
-    #next {
-        right: -200px;
-    }
-}
-
-@media (max-width: 600px) {
-    .posts {
-        height: auto;
-        margin-bottom: 20px;
-    }
-
-    #titulo1 {
-        text-align: center;
-        margin-top: 5%;
-        margin-bottom: 5%;
-    }
-
-    .imagens {
-        padding-inline: 20px;
-    }
-
-
-    #next {
-        right: -250px;
-    }
-}
 
 /* footer */
 
@@ -361,7 +421,8 @@
     .footer {
         flex-direction: column;
         height: auto;
-        padding: 20px;
+        padding: 20px;        
+        margin-top: 1050px;
     }
 
     #notarodape, #logocultura {
@@ -369,9 +430,10 @@
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 960px) {
     .footer {
         padding: 15px;
+        margin-top: 30px;
     }
 
     #notarodape {
@@ -383,9 +445,10 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
     .footer {
         padding: 10px;
+        margin-top: 1050px;
     }
 
     #notarodape {
