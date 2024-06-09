@@ -281,7 +281,7 @@
 .main{
   background-color: black;
   
-  background-image: url(/frontend/images/theatre_header.jpg);
+  background-image: url(/images/theatre_header.jpg);
   background-size: cover;
 }
 
@@ -431,7 +431,7 @@
     rgba(0, 0, 0,0) 0%,
     rgba(17, 17, 17, 0.6) 100%
     ), 
-    url(/frontend/images/THUMB1.webp);
+    url(/images/THUMB1.webp);
     background-size: cover;
     background-position: 50%;
     position: relative;
@@ -448,7 +448,7 @@
     rgba(0, 0, 0,0) 0%,
     rgba(17, 17, 17, 0.6) 100%
     ), 
-    url(/frontend/images/THUMB2.webp);
+    url(/images/THUMB2.webp);
     background-size: cover;
     background-position: 50%;
     position: relative;
@@ -465,7 +465,7 @@
     rgba(0, 0, 0,0) 0%,
     rgba(17, 17, 17, 0.6) 100%
     ), 
-    url(/frontend/images/THUMB3.webp);
+    url(/images/THUMB3.webp);
     background-size: cover;
     background-position: 50%;
     position: relative;
