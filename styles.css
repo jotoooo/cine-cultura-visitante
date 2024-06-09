@@ -379,7 +379,7 @@
 }
 
 #main__img{
-  height: 100%;
+  height: auto;
   width: 100%;
 }
 
@@ -405,23 +405,33 @@
   }
 }
 
-@media screen and (max-width: 480px){
-  .main__content h1{
-    font-size: 2rem;
-    margin-top: 3rem;
+@media only screen and (max-width: 480px) {
+  .main{
+    background-color: black;
+    
+    background-image: url(/images/theatre_header.jpg);
+    background-size: cover;
   }
 
+  .main__content h1 {
+    font-size: 2rem !important; /* Adiciona !important para garantir precedência */
+    margin-top: 1rem; /* Ajusta a margem superior */
+  }
   .main__btn {
-    padding: 12px 36px;
-    margin: 2.5rem 0;
+    margin-top: 1rem !important; /* Adiciona !important para garantir precedência */
   }
-
-  #main__img{
-    max-width: 100%; /* Assegurar que a imagem não ultrapasse a largura do contêiner */
-    height: auto;
+  .main__img--container {
+    margin-top: 0.5rem !important; /* Adiciona !important para garantir precedência */
   }
-
-} 
+  .main__container {
+    display: flex; /* Muda o display para flex */
+    flex-direction: column; /* Altera a direção para coluna para empilhar os elementos */
+    align-items: center; /* Centraliza os itens na horizontal */
+    height: auto; /* Adapta a altura automaticamente */
+    height: unset !important; /* Remove a altura definida anteriormente */
+    height: 200px; /* Adapta a altura automaticamente */
+  }
+}
 
 /* noticias */
  
