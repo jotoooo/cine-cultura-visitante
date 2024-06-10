@@ -421,7 +421,7 @@
     margin-top: 1rem !important; /* Adiciona !important para garantir precedência */
   }
   .main__img--container {
-    margin-bottom: 2rem !important; /* Adiciona !important para garantir precedência */
+    margin-top: 2rem !important; /* Adiciona !important para garantir precedência */
   }
   .main__container {
     display: flex; /* Muda o display para flex */
