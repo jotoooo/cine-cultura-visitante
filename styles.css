@@ -578,8 +578,8 @@
   width: 90%;
   height: auto;
   margin-left: 2.5%;
-  margin-top: -1rem; 
-  gap: 1rem;
+  margin-top: -1rem; /* Diminuindo a margem superior */
+  gap: 1rem; /* Adicionando um gap para controle de espaçamento entre itens */
 }
 
 .legenda2 {
@@ -590,8 +590,8 @@
   width: 100%;
   left: 0;
   top: 0;
-  margin-top: 10px;
-  padding: 0 1rem; 
+  margin-top: 10px; /* Diminuindo a margem superior */
+  padding: 0 1rem; /* Adicionando padding para espaço interno */
 }
 
 .legenda2 h1 {
@@ -639,59 +639,79 @@
     padding-left: 15px;
 }
 
+.main__btn {
+  font-size: 1rem;
+  background-color: #FFDD00;
+  border: none;
+  border-radius: 25px;
+  color: #000000;
+  margin-top: 2rem;
+  position: relative;
+  transition: all 0.35s;
+  padding: 10px;
+  cursor: pointer;
+  outline: none;
+}
+
+.main__btn a{
+  position: relative;
+  z-index: 2;
+  color: #000000;
+  font-family: "Raleway", sans-serif;  
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.main__btn:hover {
+  transform: scale(1.075);
+  transition: 0.4s ease-in;
+}
+
 /* Consultas de mídia para responsividade */
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .content4 {
-    width: 95%; /* Reduz a largura para telas menores */
-    margin-left: 2%; /* Ajusta a margem esquerda */
-    margin-top: -0.5rem; /* Ajusta a margem superior */
+      margin-left: 0;
+      margin-top: 0;
+      width: 100%;
   }
+
   .legenda2 {
-    font-size: 16px; /* Reduz o tamanho da fonte para telas menores */
+      width: 100%;
+      left: 0;
+      top: 0;
+      margin-top: 1rem;
+      padding: 0 1rem;
   }
+
+  .legenda2 h1 {
+      font-size: 1.5rem; /* Ajustando tamanho da fonte */
+  }
+
+  .legenda2 p {
+      font-size: 1rem; /* Ajustando tamanho da fonte */
+  }
+
   #local {
-    margin-top: 0.2rem; /* Ajusta a margem superior do botão */
+      font-size: 1rem; /* Ajustando tamanho da fonte */
+      padding: 0.5rem 1rem; /* Ajustando padding */
   }
+
   .image-container4 {
-    margin-top: 20px; /* Reduz a margem superior */
+      margin-top: 20px;
+      padding-left: 25px;
   }
+
   .image-container4:nth-of-type(2) {
-    margin-top: 40px; /* Reduz a margem superior */
+      margin-top: 40px;
+      padding-left: 25px;
   }
+
   .image-container4:nth-of-type(3) {
-    margin-bottom: 20px; /* Reduz a margem inferior */
-  }
-  .icone-contato {
-    padding-left: 10px; /* Ajusta o padding */
+      margin-bottom: 40px;
+      padding-left: 25px;
   }
 }
 
-/* Ajustes para telas ainda menores */
-@media only screen and (max-width: 480px) {
-  .content4 {
-    width: 100%; /* Largura total para telas muito pequenas */
-    margin-left: 0; /* Remove a margem esquerda */
-    margin-top: 0; /* Remove a margem superior */
-  }
-  .legenda2 {
-    font-size: 14px; /* Reduz ainda mais o tamanho da fonte */
-  }
-  #local {
-    margin-top: 0.1rem; /* Ajusta ainda mais a margem superior do botão */
-  }
-  .image-container4 {
-    margin-top: 10px; /* Reduz ainda mais a margem superior */
-  }
-  .image-container4:nth-of-type(2) {
-    margin-top: 20px; /* Reduz ainda mais a margem superior */
-  }
-  .image-container4:nth-of-type(3) {
-    margin-bottom: 10px; /* Reduz ainda mais a margem inferior */
-  }
-  .icone-contato {
-    padding-left: 5px; /* Ajusta ainda mais o padding */
-  }
-}
 
 /* footer */
 
