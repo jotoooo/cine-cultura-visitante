@@ -250,6 +250,13 @@
 
 
 @media screen and (max-width: 480px) {
+    .container {
+        padding: 1rem;
+        background-image: url(/images/sala.jpg);
+        background-size: cover;
+        background-position: center;        
+    }
+
     .content1 {
         margin-bottom: 2rem;
     }
